@@ -17,7 +17,8 @@
   },
   "require": {
     "symfony/yaml": "~2.6",
-    "wdalmut/php-deb-packager": ">=0.0.10"
+    "wdalmut/php-deb-packager": ">=0.0.10",
+    "symfony/console": "~2.6"
   },
   "require-dev": {
     "phpunit/phpunit": "~4",
@@ -33,5 +34,6 @@
     "psr-4": {
       "Corley\\Deb\\Describe\\": "tests/"
     }
-  }
+  },
+  "bin": ["bin/pdpkg"]
 }

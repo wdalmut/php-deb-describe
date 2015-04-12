@@ -1,0 +1,15 @@
+output_path: ./build
+mount:
+  - {src: "./src", dest: "/somewhere"}
+  - {src: "./spec", dest: "/usr/share/mysw"}
+control:
+  package: my-package-name
+  version: 0.0.1
+  depends: php5, php5-cli, php5-curl
+  maintainer: Walter Dal Mut [an-email@email.tld]
+  provides: something, something-else
+  replaces: first-package, second-package
+  suggests: php5-mcrypt, php5-xsl
+  pre_depends: build-essentials, libc6
+  architecture: all
+  section: web

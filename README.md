@@ -5,8 +5,6 @@ Just a simple wrapper around the package
 
  * master [![Build Status](https://travis-ci.org/wdalmut/php-deb-describe.svg?branch=master)](https://travis-ci.org/wdalmut/php-deb-describe)
 
-
-
 ## Describe a `deb` package with Yaml files
 
 ```yml
@@ -25,6 +23,20 @@ control:
   pre_depends: build-essentials, libc6
   architecture: all
   section: web
+```
+
+## Use with composer
+
+Just require it!
+
+```
+composer require wdalmut/php-deb-describe:dev-master
+```
+
+And use it!
+
+```
+./vendor/bin/pdpkg package your.yml
 ```
 
 ## Use the library directly
