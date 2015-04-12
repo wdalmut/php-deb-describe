@@ -1,0 +1,37 @@
+{
+  "name": "wdalmut/php-deb-describe",
+  "description": "A simple debian packager wrapper for PHP applications",
+  "type":"library",
+  "keywords":["deb","packager","ubuntu","php-deb", "debian", "yml"],
+  "license":"MIT",
+  "authors": [
+    {
+      "name":"Walter Dal Mut",
+      "email":"walter.dalmut@gmail.com",
+      "homepage":"http://walterdalmut.com",
+      "role":"Developer"
+    }
+  ],
+  "support": {
+    "email":"walter.dalmut@gmail.com"
+  },
+  "require": {
+    "symfony/yaml": "~2.6",
+    "wdalmut/php-deb-packager": ">=0.0.10"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4",
+    "phpspec/phpspec": "~2",
+    "mikey179/vfsStream": "1.4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Corley\\Deb\\Describe\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Corley\\Deb\\Describe\\": "tests/"
+    }
+  }
+}

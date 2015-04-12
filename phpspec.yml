@@ -1,0 +1,6 @@
+suites:
+  src_suite:
+    namespace: Corley\Deb\Describe
+    psr4_prefix: Corley\Deb\Describe
+    src_path: 'src'
+    spec_path: '.'
