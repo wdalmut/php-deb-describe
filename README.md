@@ -41,7 +41,7 @@ And use it!
 
 ## Use it as `phar` package
 
-You can create your `phar` package with (clue/phar-composer)[https://github.com/clue/phar-composer]
+You can create your `phar` package with [clue/phar-composer](https://github.com/clue/phar-composer)
 
 ```sh
 phar-composer.phar build wdalmut/php-deb-describe:dev-master
