@@ -11,12 +11,9 @@ mount:
   - {src: "/first", dest: "/somewhere"}
   - {src: "/src", dest: "/usr/shara/mysw"}
 control:
-  package_name: my-package-name
+  package: my-package-name
   version: 0.0.1
-  depends:
-    - php5
-    - php5-cli
-    - php5-curl
+  depends: php5, php5-cli, php5-curl
   maintainer: Walter Dal Mut [an-email@email.tld]
   provides: something, something-else
   replaces: first-package, second-package
@@ -26,7 +23,9 @@ control:
   section: web
 ```
 
-## Use the library
+## Use the library directly
+
+Just prepare a simple `compile.php` file
 
 ```php
 <?php
@@ -42,4 +41,10 @@ $describer = new Describer($parser, $packager);
 echo $describer->compose(file_get_contents("/path/to/file.yml"));
 ```
 
+And run it!
 
+```sh
+$(php compile.php)
+```
+
+Now you have your `.deb` package!
