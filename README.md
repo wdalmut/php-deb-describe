@@ -39,6 +39,14 @@ And use it!
 ./vendor/bin/pdpkg package your.yml
 ```
 
+## Use it as `phar` package
+
+You can create your `phar` package with (clue/phar-composer)[https://github.com/clue/phar-composer]
+
+```sh
+phar-composer.phar build wdalmut/php-deb-describe:dev-master
+```
+
 ## Use the library directly
 
 Just prepare a simple `compile.php` file
