@@ -3,6 +3,10 @@
 Just a simple wrapper around the package
 [`wdalmut/php-deb-packager`](https://github.com/wdalmut/php-deb-packager)
 
+ * master [![Build Status](https://travis-ci.org/wdalmut/php-deb-describe.svg?branch=master)](https://travis-ci.org/wdalmut/php-deb-describe)
+
+
+
 ## Describe a `deb` package with Yaml files
 
 ```yml
